@@ -58,7 +58,7 @@ print(f'Number of letters in a box {len(all_link)} pieces')
 # Second - extracting data from e-mails
 print('Extracting data from letters. This take few minutes. Please, wait...')
 list_letter = []
-for url in all_link:
+for url in list(all_link):
     item_letter = {}
     driver.get(url)
 
